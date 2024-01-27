@@ -1,0 +1,109 @@
+{
+    "properties": {
+        "annotations": {
+            "properties": {
+                "authorization.k8s.io/decision": {
+                    "type": "string"
+                },
+                "authorization.k8s.io/reason": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "apiVersion": {
+            "type": "string"
+        },
+        "auditID": {
+            "type": "string"
+        },
+        "kind": {
+            "type": "string"
+        },
+        "level": {
+            "type": "string"
+        },
+        "objectRef": {
+            "properties": {
+                "apiGroup": {
+                    "type": "string"
+                },
+                "apiVersion": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "namespace": {
+                    "type": "string"
+                },
+                "resource": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "requestReceivedTimestamp": {
+            "type": "string"
+        },
+        "requestURI": {
+            "type": "string"
+        },
+        "responseStatus": {
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "metadata": {
+                    "properties": {},
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "sourceIPs": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "stage": {
+            "type": "string"
+        },
+        "stageTimestamp": {
+            "type": "string"
+        },
+        "user": {
+            "properties": {
+                "extra": {
+                    "properties": {
+                        "oid": {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "type": "object"
+                },
+                "groups": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "username": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "userAgent": {
+            "type": "string"
+        },
+        "verb": {
+            "type": "string"
+        }
+    },
+    "type": "object"
+}
